@@ -3,9 +3,9 @@ const mysql = require('mysql2');
 
 const db = mysql.createConnection({
   host:     process.env.DB_HOST     || 'localhost',
-  database: process.env.DB_NAME,
+  database: process.env.DB_NAME     || 'jardin_de_daisiry',  
   user:     process.env.DB_USER     || 'root',
-  password: process.env.DB_PASSWORD || ''
+  password: process.env.DB_PASSWORD || '02161800'
 });
 
 db.connect((err) => {

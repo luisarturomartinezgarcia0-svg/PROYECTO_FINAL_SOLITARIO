@@ -4,5 +4,8 @@
   "scripts": {
     "server": "cd backend && npm run server",
     "install:backend": "cd backend && npm install"
+  },
+  "dependencies": {
+    "mysql2": "^3.22.3"
   }
 }
