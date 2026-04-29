@@ -1,0 +1,8 @@
+{
+  "name": "proyecto-final",
+  "version": "1.0.0",
+  "scripts": {
+    "server": "cd backend && npm run server",
+    "install:backend": "cd backend && npm install"
+  }
+}
