@@ -1,4 +1,4 @@
-// ── Cargar usuarios desde la API ──────────────────────────────────────────────
+
 async function cargarUsuarios() {
   const tbody = document.getElementById('tabla-usuarios');
   try {
@@ -24,7 +24,7 @@ async function cargarUsuarios() {
   }
 }
 
-// ── Enviar formulario ──────────────────────────────────────────────────────────
+
 document.getElementById('form-usuario').addEventListener('submit', async (e) => {
   e.preventDefault();
 
@@ -53,8 +53,7 @@ document.getElementById('form-usuario').addEventListener('submit', async (e) => 
   }
 });
 
-// ── Botón recargar ─────────────────────────────────────────────────────────────
 document.getElementById('btn-cargar').addEventListener('click', cargarUsuarios);
 
-// ── Carga inicial ──────────────────────────────────────────────────────────────
+
 cargarUsuarios();
