@@ -1,0 +1,199 @@
+<main>
+
+    <!-- HERO -->
+
+    <section
+        class="hero"
+        id="inicio"
+    >
+
+        <div class="overlay">
+
+            <h1>
+                El Jardín de Seño Daisiry
+            </h1>
+
+            <p>
+                Un lugar donde todos somos iguales
+            </p>
+
+            <a href="#cita" class="btn">
+                Conoce el Colegio
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- FORMULARIO -->
+
+    <section
+        class="cita"
+        id="cita"
+    >
+
+        <h2>Agende una Cita</h2>
+
+        <form action="/agendar-cita" method="POST">
+
+            <input
+                type="text"
+                name="nombre_completo"
+                placeholder="Nombre Completo"
+                required
+            >
+
+            <input
+                type="text"
+                name="cedula"
+                placeholder="Cédula"
+                required
+            >
+
+            <input
+                type="text"
+                name="telefono"
+                placeholder="Teléfono"
+                required
+            >
+
+            <input
+                type="email"
+                name="correo"
+                placeholder="Correo Electrónico"
+                required
+            >
+
+            <button type="submit">
+                Agendar Cita
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- MENU SEMANAL -->
+
+   <section
+    class="menu"
+    id="menu"
+>
+
+    <h2>Menú Semanal</h2>
+
+    <div class="tabla-menu">
+
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Día</th>
+                    <th>Desayuno</th>
+                    <th>Comida</th>
+                    <th>Merienda</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                {{#each menus}}
+
+                <tr>
+
+                    <td>{{dia}}</td>
+
+                    <td>{{desayuno}}</td>
+
+                    <td>{{comida}}</td>
+
+                    <td>{{merienda}}</td>
+
+                </tr>
+
+                {{/each}}
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+    <!-- GALERIA -->
+
+    <section
+        class="galeria"
+        id="galeria"
+    >
+
+        <img src="/img/foto1.jpg">
+        <img src="/img/foto2.jpg">
+        <img src="/img/foto3.jpg">
+
+    </section>
+
+    <!-- INSTAGRAM -->
+
+    <section class="instagram">
+
+        <h2>
+            ¡Descubre el lugar donde la imaginación cobra vida!
+        </h2>
+
+        <a
+            href="https://instagram.com"
+            target="_blank"
+            class="btn"
+        >
+            Conocer Instagram
+        </a>
+
+    </section>
+
+    <!-- TESTIMONIOS -->
+
+    <section
+        class="testimonios"
+        id="testimonios"
+    >
+
+        <h2>Testimonios</h2>
+
+        <div class="testimonio">
+
+            <h3>María Torres</h3>
+
+            <p>
+                Excelente institución y atención.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACTOS -->
+
+    <section
+        class="contactos"
+        id="contactos"
+    >
+
+        <h2>Contactos</h2>
+
+        <p>Email: admeljardindedaisiry@gmail.com</p>
+
+        <p>Teléfono: 809-806-4041</p>
+
+        <p>Santiago de los Caballeros</p>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb="
+            loading="lazy"
+        ></iframe>
+
+    </section>
+
+</main>
