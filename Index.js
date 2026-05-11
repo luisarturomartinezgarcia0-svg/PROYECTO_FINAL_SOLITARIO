@@ -1,4 +1,4 @@
-require('./src/config/db');
+require('./config/db');
 require('dotenv').config();
 
 
