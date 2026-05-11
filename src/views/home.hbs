@@ -76,51 +76,44 @@
 
     <!-- MENU SEMANAL -->
 
-   <section
-    class="menu"
-    id="menu"
->
+   <section class="menu" id="menu">
 
     <h2>Menú Semanal</h2>
 
-    <div class="tabla-menu">
+    <table>
 
-        <table>
+        <thead>
 
-            <thead>
+            <tr>
+                <th>Día</th>
+                <th>Desayuno</th>
+                <th>Comida</th>
+                <th>Merienda</th>
+            </tr>
 
-                <tr>
-                    <th>Día</th>
-                    <th>Desayuno</th>
-                    <th>Comida</th>
-                    <th>Merienda</th>
-                </tr>
+        </thead>
 
-            </thead>
+        <tbody>
 
-            <tbody>
+            {{#each menus}}
 
-                {{#each menus}}
+            <tr>
 
-                <tr>
+                <td>{{this.dia}}</td>
 
-                    <td>{{dia}}</td>
+                <td>{{this.desayuno}}</td>
 
-                    <td>{{desayuno}}</td>
+                <td>{{this.comida}}</td>
 
-                    <td>{{comida}}</td>
+                <td>{{this.merienda}}</td>
 
-                    <td>{{merienda}}</td>
+            </tr>
 
-                </tr>
+            {{/each}}
 
-                {{/each}}
+        </tbody>
 
-            </tbody>
-
-        </table>
-
-    </div>
+    </table>
 
 </section>
 
@@ -176,7 +169,51 @@
 
     </section>
 
-    <!-- CONTACTOS -->
+ <section class="presentacion-colegio">
+
+    <div class="contenido-presentacion">
+
+        <img
+            src="/img/logo.jpg"
+            alt="Logo Jardín Daisiry"
+            class="logo-presentacion"
+        >
+
+        <h2>
+            Jardín de Seño Daisiry
+        </h2>
+
+        <p>
+            “Abriendo puertas para el futuro”
+        </p>
+
+        <a
+            href="#cita"
+            class="btn"
+        >
+            Conocer el colegio
+        </a>
+
+    </div>
+
+</section>
+   
+
+    <section class="banner-final">
+
+    <img
+        src="/img/logo.jpg"
+        alt="Logo Jardín Daisiry"
+        class="logo-centro"
+    >
+
+</section>
+
+
+    
+   
+
+ <!-- CONTACTOS -->
 
     <section
         class="contactos"
@@ -187,7 +224,7 @@
 
         <p>admeljardindedaisiry@gmail.com</p>
 
-        <p>809-806-4041 | +1-809-806-4041</p>
+        <p>809-806-4041 || +1-809-806-4041</p>
 
         <p>C. 7, Santiago de los Caballeros 51000</p>
 
