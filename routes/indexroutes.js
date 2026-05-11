@@ -1,8 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-const db = require('../config/db');
-
 // HOME
 const express = require('express');
 const router = express.Router();

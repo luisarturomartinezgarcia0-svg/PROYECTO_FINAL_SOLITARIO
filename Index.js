@@ -15,19 +15,19 @@ app.set('port', process.env.PORT || 9000);
 app.engine('.hbs', exphbs.engine({
     extname: '.hbs',
     defaultLayout: 'main',
-    layoutsDir: path.join(__dirname, 'src/views/layouts'),
-    partialsDir: path.join(__dirname, 'src/views/partials')
+    layoutsDir: path.join(__dirname, 'views/layouts'),
+    partialsDir: path.join(__dirname, 'views/partials')
 }));
 
 app.set('view engine', '.hbs');
 
-app.set('views', path.join(__dirname, 'src/views'));
+app.set('views', path.join(__dirname, 'views'));
 
 // MIDDLEWARES
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-// ARCHIVOS ESTÁTICOS
+// ARCHIVOS PUBLICOS
 app.use(express.static(path.join(__dirname, 'public')));
 
 // RUTA PRINCIPAL
