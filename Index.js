@@ -5,6 +5,7 @@ require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const exphbs = require('express-handlebars');
+const { title } = require('process');
 
 const app = express();
 
@@ -27,12 +28,15 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-// ARCHIVOS PUBLICOS
+// ARCHIVOS ESTÁTICOS
 app.use(express.static(path.join(__dirname, 'public')));
 
 // RUTA PRINCIPAL
 app.get('/', (req, res) => {
-    res.render('home');
+    res.render('home', {
+        title: 'Home',
+        mensaje: 'Bienvenido a mi aplicación'
+    });
 });
 
 // SERVIDOR
