@@ -143,9 +143,10 @@
         id="galeria"
     >
 
-        <img src="/img/foto1.jpg">
-        <img src="/img/foto2.jpg">
-        <img src="/img/foto3.jpg">
+        <img src="/img/foto1.webp">
+        <img src="/img/foto2.webp">
+        <img src="/img/foto3.webp">
+        
 
     </section>
 
@@ -169,24 +170,164 @@
 
     <!-- TESTIMONIOS -->
 
-    <section
-        class="testimonios"
-        id="testimonios"
-    >
+    <section class="testimonios" id="testimonios">
 
-        <h2>Testimonios</h2>
+    <h2>Lo que dicen nuestros padres</h2>
 
-        <div class="testimonio">
+  <div class="testimonios-container">
 
-            <h3>María Torres</h3>
+    {{#each testimonios}}
+
+        <div class="testimonio-card">
 
             <p>
-                Eternamente agradecida con el Jardín de Seño Daisiry por el amor y la dedicación que le brindan a mi hija Paula. Es una tranquilidad inmensa saber que cuenta con un equipo que siempre está presente en su crecimiento y bienestar. ¡Gracias por ser su segundo hogar!
+                "{{comentario}}"
+            </p>
+
+            <h4>
+                - {{nombre}}
+            </h4>
+
+        </div>
+
+    {{/each}}
+
+</div>
+
+    <div class="form-testimonio">
+
+        <h3>Comparte tu experiencia</h3>
+
+        <form action="/guardar-testimonio" method="POST">
+
+    <input
+        type="text"
+        name="nombre"
+        placeholder="Tu nombre"
+        required
+    >
+
+    <textarea
+        name="comentario"
+        placeholder="Escribe tu testimonio..."
+        required
+    ></textarea>
+
+    <button type="submit">
+        Enviar Testimonio
+    </button>
+
+</form>
+
+    </div>
+
+</section>
+
+
+    <section class="institucion">
+
+    <h2>Nuestra Institución</h2>
+
+    <div class="institucion-grid">
+
+        <div class="institucion-card">
+
+            <h3>Misión</h3>
+
+            <p>
+                Brindar una educación inclusiva, amorosa y de calidad,
+                fomentando el desarrollo integral de cada niño.
             </p>
 
         </div>
 
-    </section>
+        <div class="institucion-card">
+
+            <h3>Visión</h3>
+
+            <p>
+                Ser una institución reconocida por su excelencia educativa,
+                inclusión y compromiso con las familias.
+            </p>
+
+        </div>
+
+        <div class="institucion-card">
+
+            <h3>Valores</h3>
+
+            <p>
+                Amor, respeto, empatía, inclusión, responsabilidad
+                y trabajo en equipo.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="fechas">
+
+    <h2>Fechas Importantes</h2>
+
+    <div class="fechas-container">
+
+        <div class="fecha-card">
+            <h3>15 Agosto</h3>
+            <p>Inicio del año escolar</p>
+        </div>
+
+        <div class="fecha-card">
+            <h3>21 Septiembre</h3>
+            <p>Día de la Paz</p>
+        </div>
+
+        <div class="fecha-card">
+            <h3>20 Diciembre</h3>
+            <p>Festival Navideño</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="faq">
+
+    <h2>Preguntas Frecuentes</h2>
+
+    <div class="faq-item">
+
+        <button class="faq-question">
+            ¿Qué edades aceptan?
+        </button>
+
+        <div class="faq-answer">
+            <p>
+                Recibimos niños desde temprana edad
+                hasta nivel preescolar.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="faq-item">
+
+        <button class="faq-question">
+            ¿Cómo puedo agendar una cita?
+        </button>
+
+        <div class="faq-answer">
+            <p>
+                Puedes completar el formulario
+                de agenda disponible en nuestra página.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
 
  <section class="presentacion-colegio">
 

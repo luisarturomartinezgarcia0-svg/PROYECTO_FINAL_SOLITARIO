@@ -1,8 +1,20 @@
-const hamburger = document.getElementById('hamburger');
-const nav = document.getElementById('nav');
+const sidebar =
+document.getElementById('sidebar');
 
-hamburger.addEventListener('click', () => {
+const openBtn =
+document.getElementById('sidebar-toggle');
 
-    nav.classList.toggle('active');
+const closeBtn =
+document.getElementById('close-btn');
+
+openBtn.addEventListener('click', ()=>{
+
+    sidebar.classList.add('show-sidebar');
+
+});
+
+closeBtn.addEventListener('click', ()=>{
+
+    sidebar.classList.remove('show-sidebar');
 
 });
