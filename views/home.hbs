@@ -80,59 +80,33 @@
 
     <h2>Menú Semanal</h2>
 
+    <div class="menu-table">
+
     <table>
 
-        <thead>
+<tbody>
 
-            <tr>
-                <th>Día</th>
-                <th>Desayuno</th>
-                <th>Comida</th>
-                <th>Merienda</th>
-            </tr>
+    {{#each menus}}
 
-        </thead>
+    <tr>
 
-        <tbody>
+        <td>{{dia}}</td>
 
-            <tr>
-                <td>Lunes</td>
-                <td>Leche y pan</td>
-                <td>Arroz con pollo</td>
-                <td>Jugo y galletas</td>
-            </tr>
+        <td>{{desayuno}}</td>
 
-            <tr>
-                <td>Martes</td>
-                <td>Chocolate y tostadas</td>
-                <td>Pasta con carne</td>
-                <td>Frutas</td>
-            </tr>
+        <td>{{comida}}</td>
 
-            <tr>
-                <td>Miércoles</td>
-                <td>Mangú con queso</td>
-                <td>Arroz y habichuelas</td>
-                <td>Yogurt</td>
-            </tr>
+        <td>{{merienda}}</td>
 
-            <tr>
-                <td>Jueves</td>
-                <td>Cereal con leche</td>
-                <td>Puré con pollo</td>
-                <td>Pan y jugo</td>
-            </tr>
+    </tr>
 
-            <tr>
-                <td>Viernes</td>
-                <td>Panqueques</td>
-                <td>Pizza</td>
-                <td>Bizcocho</td>
-            </tr>
+    {{/each}}
 
-        </tbody>
+</tbody>
 
     </table>
+
+</div>
 
 </section>
 
@@ -172,9 +146,11 @@
 
     <section class="testimonios" id="testimonios">
 
-    <h2>Lo que dicen nuestros padres</h2>
+    <h2>
+        Lo que dicen nuestros padres
+    </h2>
 
-  <div class="testimonios-container">
+    <div class="testimonios-container">
 
     {{#each testimonios}}
 
@@ -196,28 +172,30 @@
 
     <div class="form-testimonio">
 
-        <h3>Comparte tu experiencia</h3>
+        <h3>
+            Comparte tu experiencia
+        </h3>
 
         <form action="/guardar-testimonio" method="POST">
 
-    <input
-        type="text"
-        name="nombre"
-        placeholder="Tu nombre"
-        required
-    >
+            <input
+                type="text"
+                name="nombre"
+                placeholder="Tu nombre"
+                required
+            >
 
-    <textarea
-        name="comentario"
-        placeholder="Escribe tu testimonio..."
-        required
-    ></textarea>
+            <textarea
+                name="comentario"
+                placeholder="Escribe tu testimonio..."
+                required
+            ></textarea>
 
-    <button type="submit">
-        Enviar Testimonio
-    </button>
+            <button type="submit">
+                Enviar Testimonio
+            </button>
 
-</form>
+        </form>
 
     </div>
 
