@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<estudiantes>
+
+    <estudiante>
+        <id_estudiante>1</id_estudiante>
+        <nombre_completo>Juan Pérez</nombre_completo>
+        <fecha_nacimiento>2020-05-10</fecha_nacimiento>
+        <necesidad_especial>No</necesidad_especial>
+        <estado>Activo</estado>
+    </estudiante>
+
+    <estudiante>
+        <id_estudiante>2</id_estudiante>
+        <nombre_completo>María Gómez</nombre_completo>
+        <fecha_nacimiento>2019-11-15</fecha_nacimiento>
+        <necesidad_especial>Sí</necesidad_especial>
+        <estado>Activo</estado>
+    </estudiante>
+
+</estudiantes>

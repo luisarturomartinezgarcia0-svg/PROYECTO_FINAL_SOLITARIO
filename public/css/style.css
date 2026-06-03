@@ -1065,3 +1065,60 @@ iframe{
     }
 
 }
+
+
+body{
+    margin:0;
+    padding:30px;
+    background:#f4f7fa;
+    font-family:'Courier New', monospace;
+}
+
+.contenedor-xml{
+    max-width:1000px;
+    margin:auto;
+}
+
+.titulo{
+    text-align:center;
+    color:#2c3e50;
+    margin-bottom:30px;
+}
+
+.xml-box{
+    background:#ffffff;
+    border-left:6px solid #ff9800;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+    overflow-x:auto;
+}
+
+.tag{
+    color:#0066cc;
+    font-weight:bold;
+}
+
+.valor{
+    color:#008000;
+}
+
+.comentario{
+    color:#808080;
+    font-style:italic;
+}
+
+.btn-descargar{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#ff9800;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn-descargar:hover{
+    background:#e68900;
+}
